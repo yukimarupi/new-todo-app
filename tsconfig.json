@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",  // ES2017の構文を使用
+    "lib": ["dom", "dom.iterable", "esnext"],  // 利用するライブラリ
+    "allowJs": true,  // JavaScriptファイルの許可
+    "skipLibCheck": true,  // ライブラリの型チェックをスキップ
+    "strict": true,  // 厳格な型チェック
+    "noEmit": true,  // 出力ファイルを生成しない
+    "esModuleInterop": true,  // ESモジュールとの互換性
+    "module": "esnext",  // モジュール解決方法
+    "moduleResolution": "bundler",  // バンドラーモジュール解決
+    "resolveJsonModule": true,  // JSONモジュールの解決を許可
+    "isolatedModules": true,  // モジュールを個別にトランスパイル
+    "jsx": "preserve",  // JSX構文をそのまま保持
+    "incremental": true,  // インクリメンタルビルドを有効化
+    "baseUrl": "./",  // プロジェクトのルート
+    "paths": {
+      "@/*": ["./src/*"]  // エイリアス設定
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],  // 型定義に含めるファイル
+  "exclude": ["node_modules"]  // 除外するファイル/フォルダ
+}
