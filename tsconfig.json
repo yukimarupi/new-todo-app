@@ -14,6 +14,8 @@
     "jsx": "preserve",  // JSX構文をそのまま保持
     "incremental": true,  // インクリメンタルビルドを有効化
     "baseUrl": "./",  // プロジェクトのルート
+    "forceConsistentCasingInFileNames": true,
+
     "paths": {
       "@/*": ["./src/*"]  // エイリアス設定
     },

@@ -14,11 +14,6 @@ export default function HomePage() {
           </Link>
         </li>
         <li>
-          <Link href="/todos" className="text-blue-500 hover:underline">
-            TODOリストページ
-          </Link>
-        </li>
-        <li>
           <Link href="/contact" className="text-blue-500 hover:underline">
             お問い合わせページ
           </Link>
